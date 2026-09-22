@@ -33,5 +33,5 @@ const server = http.createServer((req, res) => {
 const PORT = 3000;
 
 server.listen(PORT, () => {
-  console.log(\`Todo app running on port \${PORT}\`);
+  console.log(`Todo app running on port ${PORT}`);
 });
