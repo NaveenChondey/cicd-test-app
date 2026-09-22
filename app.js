@@ -17,7 +17,7 @@ const server = http.createServer((req, res) => {
     <!DOCTYPE html>
     <html>
     <head>
-      <title>CI/CD Todo App</title>
+      <h1>CI/CD Todo App - Version 2</h1>
     </head>
     <body>
       <h1>CI/CD Todo App</h1>
