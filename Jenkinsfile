@@ -2,6 +2,7 @@ pipeline {
     agent any
 
     stages {
+
         stage('Clone') {
             steps {
                 checkout scm
@@ -16,6 +17,7 @@ pipeline {
 
         stage('Run Application') {
             steps {
+                sh 'docker rm -f cicd-test-app-container || true'
                 sh 'docker run -d -p 3000:3000 --name cicd-test-app-container cicd-test-app'
             }
         }
